@@ -56,6 +56,6 @@
 (setq auto-save-default nil)
 
 ; YASNIPPET
-(add-to-list 'load-path "~/.emacs.d/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/yasnippet2")
 (require 'yasnippet)
 (yas-global-mode 1) ;; or M-x yas-reload-all if you've started YASnippet already.
