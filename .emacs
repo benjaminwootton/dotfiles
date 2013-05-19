@@ -10,6 +10,7 @@
 ; Tags
 (global-set-key (kbd "C-p") 'tags-search) 
 (global-set-key (kbd "C-b") 'find-tag) 
+(global-set-key (kbd "C-F") 'tags-apropos) 
 
 ; File navigation
 (global-set-key (kbd "C-B") 'find-file-at-point)
@@ -50,3 +51,11 @@
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook (lambda () (ruby-electric-mode t)))
 
+; Don't create backup files
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+
+; YASNIPPET
+(add-to-list 'load-path "~/.emacs.d/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1) ;; or M-x yas-reload-all if you've started YASnippet already.
