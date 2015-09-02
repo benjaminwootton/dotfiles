@@ -22,8 +22,7 @@ set path+=..
 :nnoremap <C-b> :bprevious<CR>
 :nnoremap <C-l> :buffers<CR>:buffer<Space>
 
-nmap T ;!rspec<CR>
-nmap G ;w<CR> ;!go run %<CR>
+:map t :!rspec %<CR>
 
 set smartindent
 set tabstop=4
