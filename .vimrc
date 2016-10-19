@@ -2,7 +2,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set background=dark
 
 set nocompatible      " We're running Vim, not Vi!
 filetype on           " Enable filetype detection
