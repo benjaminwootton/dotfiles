@@ -1,3 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/ec2-user/development/ariba/ref'
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/benjaminwootton/development/first_streaming_project'
+let g:netrw_dirhist_1='/Users/benjaminwootton/development/first_streaming_project/src/main/java'
+let g:netrw_dirhist_0='/Users/benjaminwootton/development/first_streaming_project/src/main'
+let g:netrw_dirhist_9='/Users/benjaminwootton/development/first_streaming_project/src'
+let g:netrw_dirhist_8='/Users/benjaminwootton/development/first_streaming_project'
+let g:netrw_dirhist_7='/Users/benjaminwootton/development/first_streaming_project/src/main/java'
+let g:netrw_dirhist_6='/Users/benjaminwootton/development/first_streaming_project/src/main'
+let g:netrw_dirhist_5='/Users/benjaminwootton/development/first_streaming_project/src'
+let g:netrw_dirhist_4='/Users/benjaminwootton/development/first_streaming_project'
+let g:netrw_dirhist_3='/Users/benjaminwootton/development/first_streaming_project/src/main/java/timeflow'
