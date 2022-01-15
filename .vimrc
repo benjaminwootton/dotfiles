@@ -45,34 +45,33 @@ set expandtab
 
 
 call plug#begin('~/.vim/plugged')
-
 Plug 'doums/darcula'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
-
-" theme
+Plug 'rust-lang/rust.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+Plug 'timonv/vim-cargo'
 Plug 'nanotech/jellybeans.vim'
-
-" Utils
 Plug 'ryanoasis/vim-devicons'
-
-" Fuzzy search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-
 Plug 'skywind3000/asyncrun.vim'
-
 Plug 'preservim/nerdtree'
-
 call plug#end()
 
+" Syntastic
+let g:syntastic_error_symbol = 'EE'
+let g:syntastic_style_error_symbol = 'E>'
+let g:syntastic_warning_symbol = 'WW'
+let g:syntastic_style_warning_symbol = 'W>'
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_rust_checkers = ['cargo']
 
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
 set encoding=utf-8
 
 " TextEdit might fail if hidden is not set.
