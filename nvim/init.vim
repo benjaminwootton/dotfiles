@@ -80,6 +80,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sickill/vim-monokai'
 Plug 'doums/darcula'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-commentary'
 Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
@@ -138,8 +139,11 @@ let NERDTreeIgnore = ['_site']
 
 " Buffer handling
 nmap L :let &number=1-&number<CR>
-nmap <leader>l :bnext<CR>
-nmap <c-h> :bprevious<CR>
+
+nmap gn :bn<cr>
+nmap gp :bp<cr>
+nmap gd :bd<cr>  
+
 nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 nmap <leader>0 :set invnumber<CR>
