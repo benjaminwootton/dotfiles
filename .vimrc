@@ -62,6 +62,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'preservim/nerdtree'
+Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
 call plug#end()
 
 " Syntastic

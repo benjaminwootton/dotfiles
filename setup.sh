@@ -1,9 +1,8 @@
 cd ..
 ln -s ./DotFiles/.slate
-ln -s ./DotFiles/.vimrc 
+ln -s ./.config/nvim/init.vim ./.vimrc 
+ln -s ./DotFiles/.tern-project
 ln -s ./DotFiles/.tmux.conf 
-ln -s ./DotFiles/.vim 
-ln -s ./DotFiles/nvim/ ~/.config/nvim/
-cd ./config
+cd ./.config
 ln -s ../DotFiles/nvim/
 

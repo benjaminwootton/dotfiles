@@ -34,6 +34,9 @@ set autoindent
 set tabstop=4 shiftwidth=4 expandtab
 set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 set magic               " Use 'magic' patterns (extended regular expressions).
+set nowrap
+set relativenumber
+
 
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
@@ -82,6 +85,7 @@ Plug 'doums/darcula'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'altercation/vim-colors-solarized'
+Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
 call plug#end()
 
 syntax enable
@@ -155,4 +159,11 @@ highlight CocHintFloat   guifg=#ffffff guibg=#000000
 highlight CocErrorFloat   guifg=#ffffff guibg=#000000
 highlight CocWarningFloat  guifg=#ffffff guibg=#000000
 highlight CocInfoFloat  guifg=#ffffff guibg=#000000
+
+
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+
+autocmd FileType javascript map <buffer> <F9> :w<CR>:exec '!node' shellescape(@%, 1)<CR>
+autocmd FileType javascript imap <buffer> <F9> <esc>:w<CR>:exec '!node' shellescape(@%, 1)<CR>
 
