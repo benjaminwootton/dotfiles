@@ -85,8 +85,7 @@ Plug 'doums/darcula'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'altercation/vim-colors-solarized'
-Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 syntax enable
@@ -172,9 +171,3 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-" Syntastic syntax checking
-let g:syntastic_check_on_open = 1
-let g:syntastic_warning_symbol = 'W'
-let g:syntastic_error_symbol = 'E'
-let g:syntastic_style_error_symbol= 'S'
-let g:syntastic_style_warning_symbol= 'S'
