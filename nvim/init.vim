@@ -164,6 +164,10 @@ highlight CocInfoFloat  guifg=#ffffff guibg=#000000
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
+
+autocmd FileType rust map <buffer> <F9> :w<CR>:exec '!cargo run' shellescape(@%, 1)<CR>
+autocmd FileType rust imap <buffer> <F9> <esc>:w<CR>:exec '!cargo run' shellescape(@%, 1)<CR>
+
 autocmd FileType javascript map <buffer> <F9> :w<CR>:exec '!node' shellescape(@%, 1)<CR>
 autocmd FileType javascript imap <buffer> <F9> <esc>:w<CR>:exec '!node' shellescape(@%, 1)<CR>
 
