@@ -85,7 +85,7 @@ Plug 'doums/darcula'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'altercation/vim-colors-solarized'
-Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
+"Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 syntax enable
@@ -170,4 +170,8 @@ autocmd FileType rust imap <buffer> <F9> <esc>:w<CR>:exec '!cargo run' shellesca
 
 autocmd FileType javascript map <buffer> <F9> :w<CR>:exec '!node' shellescape(@%, 1)<CR>
 autocmd FileType javascript imap <buffer> <F9> <esc>:w<CR>:exec '!node' shellescape(@%, 1)<CR>
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
