@@ -60,32 +60,24 @@ let g:session_default_to_last = 1
 nmap <Space> <PageDown>
 vmap <BS> x
 
-" cd ~/.config/nvim/spell
-" wget http://ftp.vim.org/vim/runtime/spell/pt.utf-8.spl
-" set spell spelllang=pt_pt
-" zg to add word to word list
-" zw to reverse
-" zug to remove word from word list
-" z= to get list of possibilities
-" set spellfile=~/.config/nvim/spellfile.add
 set nospell
 
 " Plugins here
 call plug#begin('~/.config/nvim/plugged')
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'Chiel92/vim-autoformat'
-Plug 'scrooloose/nerdtree'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'rust-lang/rust.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sickill/vim-monokai'
-Plug 'doums/darcula'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-commentary'
-Plug 'altercation/vim-colors-solarized'
-"Plug 'vim-syntastic/syntastic'
+    Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'Chiel92/vim-autoformat'
+    Plug 'scrooloose/nerdtree'
+    Plug 'terryma/vim-multiple-cursors'
+    Plug 'rust-lang/rust.vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'sickill/vim-monokai'
+    Plug 'doums/darcula'
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'tpope/vim-commentary'
+    Plug 'altercation/vim-colors-solarized'
+    "Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 syntax enable
@@ -171,3 +163,8 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+nmap sh :split<cr>
+nmap sv :vsplit<cr>
+
+nmap <S-Tab> :tabprev<CR>
+nmap <Tab> :tabnext<CR>
