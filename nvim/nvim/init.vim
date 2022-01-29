@@ -172,3 +172,10 @@ nmap sv :vsplit<cr>
 
 nmap <S-Tab> :tabprev<CR>
 nmap <Tab> :tabnext<CR>
+
+let NERDTreeShowHidden=1
+
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
