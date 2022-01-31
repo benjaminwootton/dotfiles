@@ -179,3 +179,7 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+autocmd FileType nerdtree let b:NERDTreeZoomed = 1 | wincmd |
+let g:NERDTreeQuitOnOpen = 1
+
