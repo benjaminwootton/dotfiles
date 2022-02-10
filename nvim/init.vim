@@ -77,6 +77,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'tpope/vim-commentary'
     Plug 'altercation/vim-colors-solarized'
+    Plug 'NLKNguyen/papercolor-theme'
     "Plug 'vim-syntastic/syntastic'
 call plug#end()
 
@@ -145,7 +146,11 @@ nmap <leader>bl :ls<CR>
 nmap <leader>0 :set invnumber<CR>
 
 syntax enable
-colorscheme darcula
+set t_Co=256   " This is may or may not needed.
+
+set background=light
+colorscheme PaperColor
+
 
 highlight CocHintFloat   guifg=#ffffff guibg=#000000
 highlight CocErrorFloat   guifg=#ffffff guibg=#000000
