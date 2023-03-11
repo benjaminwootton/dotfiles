@@ -79,6 +79,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'chriskempson/tomorrow-theme'
     Plug 'arcticicestudio/nord-vim'
     Plug 'tpope/vim-commentary'
+    Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 syntax enable
@@ -174,8 +175,8 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-autocmd FileType nerdtree let b:NERDTreeZoomed = 1 | wincmd |
-let g:NERDTreeQuitOnOpen = 1
+let b:NERDTreeZoomed = 0
+let g:NERDTreeQuitOnOpen = 0
 
 " Help with autocompletion working as expected
 
@@ -368,7 +369,8 @@ let java_highlight_java_lang_ids=1
 let java_highlight_functions="style"
 let java_minlines = 150
 
-
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 colorscheme nord
 
+set re=2
