@@ -1,5 +1,3 @@
-set formatoptions+=o    " Continue comment marker in new lines.
-set textwidth=0         " Hard-wrap long lines as you type them.
 set modeline            " Enable modeline.
 set linespace=0         " Set line-spacing to minimum.
 set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
@@ -80,6 +78,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'arcticicestudio/nord-vim'
     Plug 'tpope/vim-commentary'
     Plug 'airblade/vim-gitgutter'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 syntax enable
@@ -374,3 +375,10 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 colorscheme nord
 
 set re=2
+
+let g:fzf_preview_window = ['right,50%', 'ctrl-/']
+
+nnoremap <c-s> :Files<CR>
+
+map <leader>r :NERDTreeFind<cr>
+
