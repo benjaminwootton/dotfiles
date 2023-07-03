@@ -106,6 +106,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+
+source ~/antigen.zsh
+antigen use oh-my-zsh
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 antigen theme romkatv/powerlevel10k
 antigen apply
