@@ -4,7 +4,7 @@ apt-get install lazygit
 apt-get install ripgrep
 apt-get install zsh
 apt-get install tmux
-apt-get install nvim
+apt-get install neovim
 
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
@@ -20,6 +20,10 @@ ln -s ./.config/nvim/init.vim ./.vimrc
 cd ~
 
 ## ASTRONVIM
+
+add-apt-repository ppa:neovim-ppa/stable
+apt-get update
+apt-get install neovim
 
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
