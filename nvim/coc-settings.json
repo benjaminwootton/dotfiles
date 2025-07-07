@@ -1,5 +1,0 @@
-{
- "diagnostic.checkCurrentLine": true,
- "tsserver.npm": "/usr/bin/npm",
- "tsserver.log": "verbose"
-}
